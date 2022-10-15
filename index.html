@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="jumbotron">
+                <h1>
+                    多模块集成校园防疫系统
+                </h1>
+                <p>
+                    面向在校师生的多功能疫情防控信息系统
+                </p>
+            </div>
+            <h3>
+                项目简介
+            </h3>
+            <blockquote>
+                <p>
+                    当前疫情传播时有反复，防控工作仍然需要提高警惕。为了配合疫情防控工作，在校学生需要按时参加核酸检测、及时填报出入校信息，同时在到达公共场所时还需要进行地点扫码和健康码出示。然而目前学生需要使用完全不同的平台来进行核酸检测登记、出入校信息报备以及地点扫码，这一方面给学生带来了较大的操作负担，另一方面也不利于对学生信息的汇总统计和及时反馈。于是我们团队希望开发一款多模块集成的校园疫情防控 APP，这一款 APP 对以上所有任务进行集成，既能够满足全部需求，又在原有的各个平台的基础上进行更多优化从而使操作更加便捷简单，同时还加入诸如核酸检测闹钟提醒等等人性化功能。
+                </p>
+            </blockquote>
+            <h3>
+                团队信息
+            </h3>
+            <dl>
+                <dt>
+                    团队名称：三缺一
+                </dt>
+                <dt>
+                    队长：韩旭
+                </dt>
+                <dt>
+                    成员：赵炳臣、覃映实
+                </dt>
+
+            </dl>
+            <h3>
+                数据收集
+            </h3>
+            <a id="modal-927934" href="#modal-container-927934" role="button" class="btn" data-toggle="modal">调查问卷</a>
+
+            <div class="modal fade" id="modal-container-927934" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                调查问卷
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                Q1. You are a ___
+                            </div>
+                            <div>
+                                1. Undergraduate
+                            </div>
+                            <div>
+                                2. Postgraduate
+                            </div>
+                            <div>
+                                3. Teacher
+                            </div>
+                            <div>
+                                4. Others
+                            </div>
+                            <div>
+                                Q2. Do you live in the school dormitory?
+                            </div>
+                            <div>
+                                1. Yes
+                            </div>
+                            <div>
+                                2. No
+                            </div>
+                            <div>
+                                3. Maybe
+                            </div>
+                            <div>
+                                Q3. Which college are you at? What is your major?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                Q4. What are your sources of information from the outside world?
+                            </div>
+                            <div>
+                                1. Phone
+                            </div>
+                            <div>
+                                2. Newspaper
+                            </div>
+                            <div>
+                                3. Talking to others
+                            </div>
+                            <div>
+                                4. Others
+                            </div>
+                            <div>
+                                Q5. How has the quarantine policy affected your life?
+                            </div>
+                            <div>
+                                1. No effect at all
+                            </div>
+                            <div>
+                                2. A little bit, but it doesn't matter
+                            </div>
+                            <div>
+                                3. Had a very big impact, I could barely live a normal life
+                            </div>
+                            <div>
+                                4. Sometimes it makes a big difference, sometimes it doesn't
+                            </div>
+                            <div>
+                                Q6. Have you forgotten to fill in the nucleic acid test information?
+                            </div>
+                            <div>
+                                1. Yes
+                            </div>
+                            <div>
+                                2. No
+                            </div>
+                            <div>
+                                3. Maybe
+                            </div>
+                            <div>
+                                Q7. Are your life plans often disrupted by sudden outbreaks?
+                            </div>
+                            <div>
+                                1. Yes
+                            </div>
+                            <div>
+                                2. No
+                            </div>
+                            <div>
+                                3. Maybe
+                            </div>
+                            <div>
+                                Q8. Are you satisfied with the daily schedule for nucleic acid testing and with medical workers?
+                            </div>
+                            <div>
+                                1. Yes, Yes
+                            </div>
+                            <div>
+                                2. Yes, No
+                            </div>
+                            <div>
+                                3. No, Yes
+                            </div>
+                            <div>
+                                4. No, No
+                            </div>
+                            <div>
+                                Q9. What do you think are the problems with the current epidemic information
+                            </div>
+                            <div>
+                                management?
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                            <div>
+                                Q10. Please rank some of the goals that the current epidemic information management system should achieve. (1, efficient; 2, easy to use; 3, take short time; 4, comprehensive information; 5, universal in all regions)
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                            <div>
+                                Q11. During the epidemic prevention and control period, how many systems have you used for nucleic acid detection information management and epidemic information inquiry?
+                            </div>
+                            <div>
+                                1. 1-2
+                            </div>
+                            <div>
+                                2. 3-5
+                            </div>
+                            <div>
+                                3. 6-10
+                            </div>
+                            <div>
+                                4. More
+                            </div>
+                            <div>
+                                Q12. During the epidemic prevention and control period, how much time did you spend on epidemic prevention and control every day on average?
+                            </div>
+                            <div>
+                                1. Less than 5 min
+                            </div>
+                            <div>
+                                2. 5-15 min
+                            </div>
+                            <div>
+                                3. 15-30 min
+                            </div>
+                            <div>
+                                4. More than 30 min
+                            </div>
+                            <div>
+                                Q13. Which method are you more accustomed to using for epidemic information management?
+                            </div>
+                            <div>
+                                1. WeChat App
+                            </div>
+                            <div>
+                                2. QQ file
+                            </div>
+                            <div>
+                                3. A specific application
+                            </div>
+                            <div>
+                                4. Others _____
+                            </div>
+                            <div>
+                                Q14. Do you have any suggestions for the reporting process of nucleic acid testing in the current epidemic prevention and control?
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                            <div>
+                                Q15. Do you think if someone around you complained to you that the epidemic information management system is inconvenient, how would you answer?
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                            <div>
+                                _________________________________________________________________
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a id="modal-227846" href="#modal-container-227846" role="button" class="btn" data-toggle="modal">采访稿</a>
+
+            <div class="modal fade" id="modal-container-227846" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="myModalLabel">
+                                采访稿
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                --Introduction--
+                            </div>
+                            <div>
+                                Hi, thanks for coming down. I’ll be conducting the interview today. We’re doing some research about epidemic prevention software, so some of the questions might be a little personal, and will concern your attitude of this pandemic. If you feel uncomfortable answering any of the questions, just let me know and we can skip it. I can’t tell you much about what we do or the exact reason we’re doing this research now, because it might affect the way you answer the questions. But I can definitely tell you after the interview is over. Do you have any questions so far? If you don’t mind, I would record the audio for this interview; it will only be used internally, for the purposes of this research.”
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                --Warm Up—
+                            </div>
+                            <div>
+                                Can you tell me more about your hobbies? How do you get your information usually?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Can you describe a situation that made you angry? What are your ambitions for the future?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                --Main Body—
+                            </div>
+                            <div>
+                                - Topic 1: Attitude towards the pandemicQ1. How your career goals got affected by the pandemic? Has the pandemic changed your short- and long-term strategy? How?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q2. What has been the most stressful thing for you since the pandemic? How did you deal with the stress during the pandemic?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q3. What lessons have you learned from this Covid-19 pandemic situation?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q4. What challenges did you face in online school? What challenges did you face in epidemic prevention?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q5. If your friend or family member complained to you about the quarantine policy, what would you do?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                --Topic 2: Epidemic prevention policy &amp; system—
+                            </div>
+                            <div>
+                                Q1. Can you describe what you exactly do every day to comply with the quarantine policy? Do you think the policy is easy to do?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q2. After such a long period of preparedness for COVID-19, can you summarize how the policy has affected your daily life and the lives of those around you?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q3. What do you think are the advantages and disadvantages of your current epidemic information management system and nucleic acid test information reporting system?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q4. Please describe your ideal epidemic prevention information management system and try to explain its advantages.
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q5. What characteristics do you want the epidemic prevention information management system to have?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                --Topic 3: Nucleic acid information—
+                            </div>
+                            <div>
+                                Q1. How often do you do nucleic acid testing? How long does it take each time?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q2. Do you think nucleic acid testing has affected your daily life? If yes, how was it affected?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q3. Do you think the nucleic acid test information management system is easy to use? If not, what factors do you think caused it?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q4. Please describe your ideal nucleic acid detection method. And try to point out its advantages.
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Q5. What do you think is the most important feature of a nucleic acid detection system?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                --Closing—
+                            </div>
+                            <div>
+                                What are your thoughts on a unified epidemic management system mobile application?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Would you prefer to use a mobile app or an online file to manage outbreak information?
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _______________________________________________________________
+                            </div>
+                            <div>
+                                _
+                            </div>
+                            <div>
+                                Thanks for your responses!
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button> <button type="button" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

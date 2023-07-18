@@ -1,2 +1,2 @@
-Welcome to my [website]([xhanxu.github.io](https://xhanxu.github.io/)https://xhanxu.github.io/)!
+Welcome to my [website](https://xhanxu.github.io/)!
 

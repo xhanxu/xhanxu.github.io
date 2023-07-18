@@ -25,7 +25,8 @@
     font-weight: normal;
     src: local("Optima Bold"), url("font/OptimaLTStd-Black.woff") format("woff");
   }
-  
+
+
   body {
     font-family: "Ubuntu";
     /* background-color: #f8f7debd; */
@@ -34,10 +35,10 @@
   
   .content {
     width: 980px;
-    padding: 80px 100px;
+    padding: 25px 50px;
     margin: 20px auto;
-    background-color: #ecf4f3bd;
-    box-shadow: 0px 0px 20px #4d4949;
+    background-color: #e7efedbd;
+    box-shadow: 0px 0px 20px #ced9d6bd;
     border-radius: 20px;
   }
   
@@ -76,6 +77,7 @@
     padding-bottom: 5px;
     padding-right: 10px;
     vertical-align: top;
+    /* background-color: #f8f7debd; */
   }
   
   div#container {

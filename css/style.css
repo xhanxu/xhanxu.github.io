@@ -1,8 +1,8 @@
 @font-face {
-    font-family: "Optima";
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima"), url("font/Ubuntu-Regular.woff") format("woff");
+    src: local("Ubuntu"), url("font/Ubuntu-Regular.woff") format("woff");
   }
   
   @font-face {
@@ -27,7 +27,7 @@
   }
   
   body {
-    font-family: "Optima";
+    font-family: "Ubuntu";
     /* background-color: #f8f7debd; */
     font-size: 16px;
   }

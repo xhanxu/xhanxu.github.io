@@ -1,184 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Xu Han 韩旭</title>
 
-<head>
+    <meta name="author" content="Xu Han" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <link rel="icon" href="./about/bitbug_favicon.ico" type="image/x-icon" />
 
-  <link rel="icon" type="image/x-icon" href="img/myico.ico" />
-  <title>Space Photon - xhan's blog</title>
+    <link href="./css/style.css" rel="stylesheet" media="all" type="text/css" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"
+    />
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+    ></script>
 
-  <!-- Custom styles for this template -->
-  <link href="css/clean-blog.min.css" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/57fb8d417e.js"
+      crossorigin="anonymous"
+    ></script>
 
-</head>
+    <script type="text/javascript">
+      window.onload = choosePic;
+      var myPix = new Array("./about/pic.jpg");
+      function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("myPicture").src = myPix[randomNum];
+      }
+      function lastUpdate() {
+        var x = document.lastModified.substr(0, 10);
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+    <script type="text/javascript" src="./js/hidebib.js"></script>
+    <script type="text/javascript" src="./js/loadtxt.js"></script>
+  </head>
 
-<body>
+  <body onload="lastUpdate()">
+    <div class="content">
+      <div id="container">
+        <table>
+          <tbody>
+            <tr>
+              <!-- <td>
+                <img
+                  id="myPicture"
+                  src="./about/pic.jpg"
+                  style="
+                    float: left;
+                    margin-top: 30px;
+                    margin-left: 50px;
+                    /* margin-right: 10px; */
+                    border-radius: 100%;
+                  "
+                  width="250px"
+                />
+              </td> -->
+              <td>
+                <div id="DocInfo">
+                  <div id="intro">
+                    <h1>Xu Han (韩 旭)</h1>
+                    <!-- <a target='_blank'
+                        href='https://goo.gl/maps/vfTQ6Gbbg3gNvzTZ8'
+                        title='Location'>
+                        <font size="5"><i class='fas
+                            fa-map-marker-alt'></i></font>
+                      </a> -->
+                    <a style="color: black" href="http://english.hust.edu.cn/"
+                      >Huazhong University of Science and Technology</a
+                    ><br />
+                    <br />
+                    <a href="mailto: yuliang.xiu@tue.mpg.de">
+                      <span
+                        class="fa fa-envelope"
+                        style="color: rgb(17, 0, 128); font-size: 20px"
+                      >
+                        <span style="font-family: Optima Bold"
+                          >hhanxux@gmail.com</span
+                        >
+                        <!-- <span
+                          class="fa fa-at"
+                          style="color: rgb(17, 0, 128); font-size: 20px"
+                          ><span style="font-family: Optima Bold">
+                            gmail.com</span
+                          ></span
+                        > -->
+                      </span></a
+                    >
+                    <br />
+                  </div>
+                  <br />
+                  <ul class="icon-list">
+                    <a
+                      style="color: rgb(76, 0, 255)"
+                      href="./about/yuliangxiu.pdf"
+                    >
+                      <span class="ai ai-cv fa-xl"></span>
+                    </a>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Millennium Falcon</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+                    <a
+                      style="color: rgb(33, 111, 206)"
+                      href="https://scholar.google.com.hk/citations?hl=zh-CN&user=9zAA9rQAAAAJ"
+                    >
+                      <span class="ai ai-google-scholar fa-xl"></span>
+                    </a>
+
+                    <a
+                      style="color: black"
+                      href="https://github.com/yuliangxiu"
+                    >
+                      <span class="fa-brands fa-github fa-xl"></span>
+                    </a>
+
+                    <a
+                      style="color: black"
+                      href="https://huggingface.co/Yuliang"
+                    >
+                      <img
+                        id="huggingface"
+                        src="./about/huggingface.svg"
+                        width="25px"
+                      />
+                    </a>
+
+                    <!-- <a
+                      style="color: black"
+                      href="https://www.researchgate.net/profile/Yuliang-Xiu"
+                    >
+                      <span class="ai ai-researchgate fa-xl"></span>
+                    </a> -->
+
+                    <a style="color: black" href="https://dblp.org/">
+                      <span class="ai ai-dblp fa-xl"></span>
+                    </a>
+
+                    <span style="color: gray; font-weight: normal">|</span>
+                    <!-- <a
+                      style="color: black"
+                      href="https://www.linkedin.com/in/yuliangxiu"
+                    >
+                      <span class="fa fa-linkedin fa-xl"></span>
+                    </a> -->
+
+                    <a
+                      style="color: rgb(22, 106, 202)"
+                      href="https://twitter.com/yuliangxiu"
+                    >
+                      <span class="fa-brands fa-twitter fa-xl"></span>
+                    </a>
+
+                    <!-- <a
+                      style="color: black"
+                      href="https://www.facebook.com/xiuyuliang1993"
+                    >
+                      <span class="fa fa-facebook fa-xl"></span>
+                    </a> -->
+
+                    <a
+                      style="color: rgb(26, 109, 197)"
+                      href="https://www.zhihu.com/people/yuliangxiu"
+                    >
+                      <span class="fa-brands fa-zhihu fa-xl"></span>
+                    </a>
+
+                    <a
+                      style="color: rgb(255, 0, 0)"
+                      href="https://www.youtube.com/channel/UCicL0Co86tGbzoV2heWiEaA"
+                    >
+                      <span class="fa-brands fa-youtube fa-xl"></span>
+                    </a>
+
+                    <a
+                      style="color: rgb(244, 142, 159)"
+                      href="https://space.bilibili.com/86857008"
+                    >
+                      <span class="fa-brands fa-bilibili fa-xl"></span>
+                    </a>
+                  </ul>
+
+                  <br />
+                </div>
+                <br />
+              </td>
+              <td>
+                <img
+                  id="myPicture"
+                  src="./about/pic.jpg"
+                  style="
+                    float: right;
+                    margin-top: 50px;
+                    /* margin-left: 50px; */
+                    margin-right: 10px;
+                    border-radius: 100%;
+                  "
+                  width="200px"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <br />
+              <h1>Biography</h1>
+
+              I'm currently a first-year CS graduate student at
+              <a href="http://english.hust.edu.cn/"
+                >Huazhong University of Science and Technology</a
+              >, under the guidance of
+              <a href="https://nini-lxz.github.io/">Xianzhi Li</a>. Prior to
+              this, I completed my B.Eng. (Honours) degree in Artificial
+              Intelligence at
+              <a href="https://www.en.sdu.edu.cn/">Shandong University</a> in
+              2023, during which I worked closely with
+              <a href="https://xiaomengbai.github.io/">Mengbai Xiao</a>. I am
+              deeply interested in the intersection of 3D Computer Vision,
+              Graphics, Robotics, and 3D Deep Learning. More specifically, my
+              areas of focus include:
+              <ul>
+                <li>3D Scene Generation and Understanding</li>
+                <li>Embodied AI</li>
+                <li>3D Shape Generation, Editing, and Reconstruction</li>
+                <li>Human-Scene Interaction</li>
+                <li>Human Motion Synthesis</li>
+              </ul>
+
+              My aspiration is to use the power of Computer Vision, Computer
+              Graphics, and Deep Learning techniques to construct a vivid and
+              immersive science-fiction world that captures the imagination.
+              <br /><br />
+            </td>
+          </tr>
+        </table>
+
+        <!-- <strong style="color: red"
+          >I am seeking for Ph.D. to start in Fall 2026. Contact me if you have any leads!
+
+            </a
+        ></strong> -->
+
+        <!-- <a href="https://www.youtube.com/channel/UCicL0Co86tGbzoV2heWiEaA"
+          ><img
+            src="https://img.shields.io/youtube/channel/views/UCicL0Co86tGbzoV2heWiEaA?logo=youtube&labelColor=ce4630&style=flat-plastic"
+        /></a> -->
+        <!-- <br /><br /> -->
+
+        <h1>News</h1>
+        [07/10/2023] Starting my new journey at HUST!<br />
+
+        <a href="javascript:toggleblock(&#39;old_news&#39;)"
+          >---- show more ----</a
+        >
+        <div id="old_news" style="display: none">
+          [06/20/2023] Got my B.Eng. degree with Honours (1/52) at Shandong
+          University!<br />
+        </div>
+        <br /><br />
+
+        <h1 id="citation">Publications</h1>
+
+        I am dedicated to generating a 3D digital world, my favorite papers are
+        <span style="background-color: lightgoldenrodyellow">highlighted</span>.
+
+        <br />
+        <table class="pub_table">
+          <tr id="yang2023dif">
+            <td class="pub_td1">
+              <img src="./about/econ.gif" />
+            </td>
+            <td class="pub_td2">
+              <b
+                >D-IF: Uncertainty-aware Human Digitization via Implicit
+                Distribution Field&nbsp;</b
+              >
+
+              <br /><br />
+              <a href="https://github.com/yxt7979">Xueting Yang</a>, Yihao Luo*,
+              <u><strong style="color: purple">Yuliang Xiu</strong></u
+              >*, Wei Wang, Hao Xu,
+              <a
+                href="https://scholar.google.com/citations?user=JHvyYDQAAAAJ&hl=zh-CN"
+                >Zhaoxin Fan</a
+              >
+              <br />
+              (*equal contribution)
+              <br />
+              <i>
+                International Conference on Computer Vision 2023 (<strong
+                  style="color: brown"
+                  >ICCV 2023</strong
+                >)</i
+              ><br /><br />
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;yang2023dif&#39;)"
+                class="toggleabs"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a href="https://yxt7979.github.io/idf/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;yang2023dif&#39;)"
+                class="togglebib"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre id="difbib" xml:space="preserve" style="display: none"></pre>
+              <span id="difabs" style="display: none"></span>
+            </td>
+          </tr>
+
+          <tr id="xiu2023econ" class="focus">
+            <td class="pub_td1">
+              <img src="./about/econ.gif" />
+            </td>
+            <td class="pub_td2">
+              <b
+                >ECON: Explicit Clothed humans Optimized via Normal
+                integration&nbsp;</b
+              ><iframe
+                src="https://ghbtns.com/github-btn.html?user=yuliangxiu&repo=ECON&type=star&count=true&v=2&size=small"
+                frameborder="0"
+                scrolling="0"
+                width="100"
+                height="20"
+              ></iframe
+              ><br />
+              <a
+                href="https://huggingface.co/spaces/Yuliang/ECON"
+                style="padding-left: 0.5rem; vertical-align: top"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ECON-orange"
+              /></a>
+              <a
+                href="https://colab.research.google.com/drive/1YRgwoRCZIrSB2e7auEWFyG10Xzjbrbno?usp=sharing"
+                style="padding-left: 0.5rem; vertical-align: top"
+                ><img
+                  style="margin-top: 0.5em"
+                  src="https://colab.research.google.com/assets/colab-badge.svg"
+                  alt="Google Colab"
+              /></a>
+              <a
+                href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-windows.md"
+              >
+                <img
+                  style="
+                    height: 20px;
+                    outline: 1px solid grey;
+                    border-radius: 5pt;
+                    margin-top: 0.5em;
+                    margin-left: 0.5em;
+                  "
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Unofficial_Windows_logo_variant_-_2002%E2%80%932012_%28Multicolored%29.svg/1161px-Unofficial_Windows_logo_variant_-_2002%E2%80%932012_%28Multicolored%29.svg.png"
+                />
+              </a>
+              <a
+                href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-docker.md"
+              >
+                <img
+                  style="
+                    height: 20px;
+                    outline: 1px solid grey;
+                    border-radius: 5pt;
+                    margin-top: 0.5em;
+                    margin-left: 0.5em;
+                  "
+                  src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"
+                />
+              </a>
+              <a href="https://carlosedubarreto.gumroad.com/l/CEB_ECON">
+                <img
+                  style="
+                    height: 20px;
+                    outline: 1px solid grey;
+                    border-radius: 5pt;
+                    margin-top: 0.5em;
+                    margin-left: 0.5em;
+                  "
+                  src="https://www.nicepng.com/png/detail/343-3436343_blender-logo-png.png"
+                />
+              </a>
+
+              <br /><br />
+              <u><strong style="color: purple">Yuliang Xiu</strong></u
+              >, <a href="https://is.mpg.de/~jyang">Jinlong Yang</a>,
+              <a href="https://hoshino042.github.io/homepage/">Xu Cao</a>,
+              <a href="https://ps.is.mpg.de/~dtzionas">Dimitrios Tzionas</a>,
+              <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
+              <br />
+              <i>
+                Computer Vision and Pattern Recognition 2023 (<strong
+                  style="color: brown"
+                >
+                  CVPR 2023, Highlight</strong
+                >)
+              </i>
+              <br /><br />
+
+              <a
+                shape="rect"
+                href="javascript:toggleabs(&#39;xiu2023econ&#39;)"
+                class="toggleabs"
+                ><i class="fas fa-angle-double-down" aria-hidden="true"
+                  >&nbsp;</i
+                >Intro&nbsp;</a
+              >
+              <a href="https://xiuyuliang.cn/econ/"
+                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
+                >Home&nbsp;</a
+              >
+              <a href=""
+                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i></a
+              >[<a href="https://arxiv.org/abs/2212.07422">arXiv</a>,
+              <a href="https://readpaper.com/paper/4736821012688027649"
+                >Reader</a
+              >]
+
+              <a href=""
+                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
+                >Video&nbsp;</a
+              >[<a href="https://youtu.be/5PEd_p90kS0">En</a>,
+              <a
+                href="https://www.bilibili.com/video/BV1NM4y1B7UN/?share_source=copy_web&vd_source=5f4004d0708487723704b9e4bcf50868"
+                >中</a
+              >]
+              <a href="https://zhuanlan.zhihu.com/p/626295986"
+                ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
+              >
+              <a
+                shape="rect"
+                href="javascript:togglebib(&#39;xiu2023econ&#39;)"
+                class="togglebib"
+                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
+                >Bibtex&nbsp;</a
+              >
+              <pre
+                id="econbib"
+                xml:space="preserve"
+                style="display: none"
+              ></pre>
+              <span id="econabs" style="display: none"></span>
+            </td>
+          </tr>
+        </table>
+
+        <h1>Academic Service</h1>
+        <ul>
+          <li>
+            <strong>Computer Graphics (CG)</strong>: SIGGRAPH, SIGGRAPH Asia
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+          <li>
+            <strong>Computer Vision (CV)</strong>: CVPR, ECCV, ICCV, NeurIPS,
+            T-PAMI
           </li>
         </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Live Long & Prosper</h1>
-            <span class="subheading">xhan's little ship. By  韩 旭.</span>
+        <h1>Honors & Awards</h1>
+        <ul>
+          <li>[06/2023] <strong>Bachelor Honours Degree</strong> (1/52)</li>
+          <li>
+            [06/2023]
+            <strong>Outstanding Graduates of Shandong University</strong>
+          </li>
+          <li>
+            [10/2022] <strong>National Scholarship </strong> (highest honor for
+            undergraduates, top 0.2% nationwide)
+          </li>
+          <li>
+            [10/2022]
+            <strong
+              >Huawei Scholarship and Huawei-MOE "Future Star" Award</strong
+            >
+          </li>
+          <li>
+            [11/2021]
+            <strong
+              >First Prize in Contemporary Undergraduate Mathematical Contest in
+              Modeling
+            </strong>
+            (Top 0.6% in 45K teams)
+          </li>
+          <li>
+            [11/2021]
+            <strong
+              >Huawei Scholarship and Huawei-MOE (Ministry of Education) "Future
+              Star" Award</strong
+            >
+          </li>
+        </ul>
+
+        <!-- <h1>Blogs</h1>
+        <ul>
+          <li>
+            [论文详解]CVPR'23 (Highlight) | ECON: 一个数字人，显式隐式各自表述
+            <a href="https://zhuanlan.zhihu.com/p/626295986"
+              ><i class="fab fa-quora">&nbsp;</i
+              ><span class="fa-brands fa-zhihu fa-xl"></span
+            ></a>
+          </li>
+
+
+        </ul> -->
+
+        <div align="center">
+          <div style="width: 250px; height: 300px">
+            <!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5xar4c67iik&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=33" async="async"></script> -->
+            <script
+              type="text/javascript"
+              src="//rf.revolvermaps.com/0/0/8.js?i=5xar4c67iik&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=ubuntu&amp;l=33"
+              async="async"
+            ></script>
           </div>
+          <br />
+          <strong
+            >Last updated: <span style="color: blue" id="demo"></span
+          ></strong>
+        </div>
+
+        <div align="center">
+          <br />
+          <span style="color: gray" id="web"
+            >This template is modified from
+            <a href="https://jonbarron.info/">Jon</a> and
+            <a href="https://xiuyuliang.cn/">Yuliang</a>'s website, feel free to
+            steal the
+            <a href="https://github.com/jonbarron/website">source code</a>.
+          </span>
         </div>
       </div>
     </div>
-  </header>
-
-  <!-- Main Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Man must explore, and this is exploration at its greatest
-            </h2>
-            <h3 class="post-subtitle">
-              Problems look mighty small from 150 miles up
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-            </h2>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on September 18, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
-        <hr>
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright &copy; Han Xu's Page</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
-
-</body>
-
+  </body>
 </html>

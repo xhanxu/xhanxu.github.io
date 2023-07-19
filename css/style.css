@@ -16,7 +16,7 @@
     font-family: "Optima Medium";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima Medium"), url("font/OptimaLTPro-Medium.woff") format("woff");
+    src: local("Optima Medium"), url("font/Marcellus-Regular.woff") format("woff");
   }
   
   @font-face {
@@ -34,12 +34,12 @@
   }
   
   .content {
-    width: 980px;
+    width: 1024px;
     padding: 25px 50px;
     margin: 20px auto;
-    background-color: #e7efedbd;
-    box-shadow: 0px 0px 20px #ced9d6bd;
-    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px #bfbfcebd;
+    border-radius: 2px;
   }
   
   table.pub_table {

@@ -1,3 +1,16 @@
+// patchDPCC
+$(function(){
+   $.get("./abs/patchDPCC.txt", function(data) {
+      $("#patchdpccabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/patchDPCC.txt", function(data) {
+      $("#patchdpccbib").html(data);
+   });
+});
+
 // DIF
 $(function(){
     $.get("./abs/dif.txt", function(data) {

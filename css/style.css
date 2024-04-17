@@ -16,14 +16,14 @@
     font-family: "Optima Medium";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima Medium"), url("font/YsabeauOffice-SemiBold.woff") format("woff");
+    src: local("Optima Medium"), url("font/YsabeauOffice-SemiBold.woff") format("ttf");
   }
   
   @font-face {
     font-family: "Optima Bold";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima Bold"), url("font/YsabeauOffice-ExtraBold.woff") format("woff");
+    src: local("Optima Bold"), url("font/YsabeauOffice-BlackItalic.ttf") format("ttf");
   }
 
 

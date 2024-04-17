@@ -2,7 +2,7 @@
     font-family: "Ubuntu";
     font-style: normal;
     font-weight: normal;
-    src: local("Ubuntu"), url("font/Marcellus-Regular.woff") format("woff");
+    src: local("Ubuntu"), url("font/YsabeauOffice-Regular.woff") format("woff");
   }
   
   @font-face {
@@ -16,14 +16,14 @@
     font-family: "Optima Medium";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima Medium"), url("font/Marcellus-Regular.woff") format("woff");
+    src: local("Optima Medium"), url("font/YsabeauOffice-Medium.woff") format("woff");
   }
   
   @font-face {
     font-family: "Optima Bold";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima Bold"), url("font/OptimaLTStd-Bold.woff") format("woff");
+    src: local("Optima Bold"), url("font/YsabeauOffice-ExtraBold.woff") format("woff");
   }
 
 

@@ -16,7 +16,7 @@
     font-family: "Optima Medium";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima Medium"), url("font/YsabeauOffice-SemiBold.woff") format("woff");
+    src: local("Optima Medium"), url("font/YsabeauOffice-Bold.woff") format("woff");
   }
   
   @font-face {

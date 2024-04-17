@@ -29,7 +29,7 @@
 
   body {
     font-family: "Ubuntu";
-    /* background-color: #b0a8e636; */
+    background-color: #ffffff36;
     font-size: 16px;
   }
   
@@ -38,7 +38,7 @@
     padding: 25px 50px;
     margin: 20px auto;
     background-color: white;
-    /* box-shadow: 0px 0px 20px #eef1ffc9; */
+    box-shadow: 0px 0px 20px #ffffffc9;
     border-radius: 2px;
   }
   

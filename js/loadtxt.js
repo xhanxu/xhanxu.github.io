@@ -1,3 +1,16 @@
+// Mamba3D
+$(function(){
+   $.get("./abs/Mamba3D.txt", function(data) {
+      $("#mamba3dabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/Mamba3D.txt", function(data) {
+      $("#mamba3dbib").html(data);
+   });
+});
+
 // patchDPCC
 $(function(){
    $.get("./abs/patchDPCC.txt", function(data) {

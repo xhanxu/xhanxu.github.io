@@ -5,13 +5,3 @@
   month     = {June},
   year      = {2023},
 }
-
-@inproceedings{pan2024patchdpcc,
-  title={patchDPCC: A Patchwise Deep Compression Framework for Dynamic Point Clouds},
-  author={Pan, Zirui and Xiao, Mengbai and Han, Xu and Yu, Dongxiao and Zhang, Guanghui and Liu, Yao},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={38},
-  number={5},
-  pages={4406--4414},
-  year={2024}
-}

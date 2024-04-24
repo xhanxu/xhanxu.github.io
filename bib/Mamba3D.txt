@@ -1,0 +1,8 @@
+@misc{han2024mamba3d,
+      title={Mamba3D: Enhancing Local Features for 3D Point Cloud Analysis via State Space Model}, 
+      author={Xu Han and Yuan Tang and Zhaoxuan Wang and Xianzhi Li},
+      year={2024},
+      eprint={2404.14966},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}

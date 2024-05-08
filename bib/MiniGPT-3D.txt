@@ -1,0 +1,6 @@
+@article{tang2024minigpt_3d,
+  title={MiniGPT-3D: Efficiently Aligning 3D Point Clouds with Large Language Models using 2D Priors},
+  author={Tang, Yuan and Han, Xu and Li, Xianzhi and Yu, Qiao and Hao, Yixue and Hu, Long and Chen, Min},
+  journal={https://arxiv.org/abs/2405.01413},
+  year={2024}
+}

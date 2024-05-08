@@ -1,3 +1,16 @@
+// MiniGPT-3D
+$(function(){
+   $.get("./abs/MiniGPT-3D.txt", function(data) {
+      $("#minigpt3dabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/MiniGPT-3D.txt", function(data) {
+      $("#minigpt3dbib").html(data);
+   });
+});
+
 // Mamba3D
 $(function(){
    $.get("./abs/Mamba3D.txt", function(data) {

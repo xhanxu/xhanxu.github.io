@@ -1,12 +1,12 @@
 // MiniGPT-3D
 $(function(){
-   $.get("./abs/MiniGPT-3D.txt", function(data) {
+   $.get("./abs/MiniGPT3D.txt", function(data) {
       $("#minigpt3dabs").html(data);
    });
 });
 
 $(function(){
-   $.get("./bib/MiniGPT-3D.txt", function(data) {
+   $.get("./bib/MiniGPT3D.txt", function(data) {
       $("#minigpt3dbib").html(data);
    });
 });

@@ -1,3 +1,16 @@
+// GreenPLM
+$(function(){
+   $.get("./abs/GreenPLM.txt", function(data) {
+      $("#greenplmabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/GreenPLM.txt", function(data) {
+      $("#greenplmbib").html(data);
+   });
+});
+
 // MiniGPT-3D
 $(function(){
    $.get("./abs/MiniGPT3D.txt", function(data) {

@@ -1,0 +1,9 @@
+@misc{tang2024textpoint3ddataefficient,
+      title={More Text, Less Point: Towards 3D Data-Efficient Point-Language Understanding}, 
+      author={Yuan Tang and Xu Han and Xianzhi Li and Qiao Yu and Jinfeng Xu and Yixue Hao and Long Hu and Min Chen},
+      year={2024},
+      eprint={2408.15966},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.15966}, 
+}

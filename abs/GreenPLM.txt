@@ -1,0 +1,1 @@
+We introduce a new task, 3D Data-Efficient Point-Language Understanding. Our proposed GreenPLM uses text data to compensate for the lack of 3D data, achieving superior 3D understanding with only 12% or even without 3D data.

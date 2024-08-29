@@ -1,4 +1,4 @@
-@misc{tang2024textpoint3ddataefficient,
+@misc{tang2024greenplm,
       title={More Text, Less Point: Towards 3D Data-Efficient Point-Language Understanding}, 
       author={Yuan Tang and Xu Han and Xianzhi Li and Qiao Yu and Jinfeng Xu and Yixue Hao and Long Hu and Min Chen},
       year={2024},

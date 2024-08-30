@@ -1,3 +1,16 @@
+// RIDE
+$(function(){
+   $.get("./abs/RIDE.txt", function(data) {
+      $("#rideabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/RIDE.txt", function(data) {
+      $("#ridebib").html(data);
+   });
+});
+
 // GreenPLM
 $(function(){
    $.get("./abs/GreenPLM.txt", function(data) {

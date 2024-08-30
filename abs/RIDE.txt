@@ -1,0 +1,1 @@
+We present RIDE, a pioneering exploration of Rotation-Invariance for the 3D LiDAR-point-based object DEtector, with the key idea of designing rotation-invariant features from LiDAR scenes and then effectively incorporating them into existing 3D detectors.

@@ -1,0 +1,9 @@
+@misc{wang2024ride,
+      title={RIDE: Boosting 3D Object Detection for LiDAR Point Clouds via Rotation-Invariant Analysis}, 
+      author={Zhaoxuan Wang and Xu Han and Hongxin Liu and Xianzhi Li},
+      year={2024},
+      eprint={2408.15643},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.15643}, 
+}

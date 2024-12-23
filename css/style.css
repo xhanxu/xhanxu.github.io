@@ -2,7 +2,7 @@
     font-family: "Ubuntu";
     font-style: normal;
     font-weight: normal;
-    src: local("Ubuntu"), url("font/OptimaLTPro-Medium.woff") format("woff");
+    src: local("Ubuntu"), url("font/Gabarito-VariableFont_wght.ttf") format("woff");
   }
   
   @font-face {
@@ -16,7 +16,7 @@
     font-family: "Optima Medium";
     font-style: normal;
     font-weight: normal;
-    src: local("Optima Medium"), url("font/OptimaLTPro-Medium.woff") format("woff");
+    src: local("Optima Medium"), url("font/Gabarito-VariableFont_wght.ttf") format("woff");
   }
   
   @font-face {
@@ -29,17 +29,19 @@
 
   body {
     font-family: "Ubuntu";
+    color: #000000d3;
     background-color: #ffffff36;
     font-size: 20px;
   }
   
   .content {
-    width: 1024px;
+    width: 1280px;
     padding: 25px 50px;
     margin: 20px auto;
-    background-color: white;
-    box-shadow: 0px 0px 20px #ffffffc9;
-    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.269);
+    box-shadow: 0px 0px 20px #525256c9;
+    border-radius: 50px;
+    /* line-height: 150%; */
   }
   
   table.pub_table {
@@ -67,13 +69,13 @@
   .box {
     display: inline-block;
     /* height: 25px; */
-    /*width: 70px;*/
+    /* width: 70px; */
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 15px;
     /* box-shadow: 0px 0px 2px 2px #DDE8FC; */
     padding: 5px 10px;
-    background-color: #DDE8FC;
+    background-color: #e6e6e6;
     /* font-weight: bold; */
     text-align: center;
   }
@@ -106,7 +108,7 @@
   div#container {
     margin-left: auto;
     margin-right: auto;
-    width: 950px;
+    width: 960px;
     text-align: left;
     position: relative;
     /* background-color: #f8f7debd; */
@@ -132,6 +134,7 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    /* box-shadow: 0px 0px 20px #4d4949; */
   }
   
   div.gallery > img {
@@ -139,6 +142,7 @@
     padding: 2px;
     height: 90px;
     width: auto;
+    /* box-shadow: 0px 0px 20px #6c5e5e; */
   
   }
   
@@ -169,10 +173,11 @@
   }
   
   h1 {
-    color: #000000;
+    color: #000000d3;
   }
   
   h2 {
+    color: #000000d3;
     font-size: 130%;
   }
   

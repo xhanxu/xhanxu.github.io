@@ -1,3 +1,16 @@
+// Fancy123
+$(function(){
+   $.get("./abs/Fancy123.txt", function(data) {
+      $("#fancy123abs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/Fancy123.txt", function(data) {
+      $("#fancy123bib").html(data);
+   });
+});
+
 // RIDE
 $(function(){
    $.get("./abs/RIDE.txt", function(data) {

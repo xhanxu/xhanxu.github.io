@@ -1,0 +1,1 @@
+We propose a SOTA framework for single-image-to-3D-mesh, leveraging 2D deformation, 3D deformation, and unprojection to resolve multiview inconsistency, low fidelity, and blurry coloration.

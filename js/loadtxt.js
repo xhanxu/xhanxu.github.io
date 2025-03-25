@@ -1,3 +1,16 @@
+// MoST
+$(function(){
+   $.get("./abs/MoST.txt", function(data) {
+      $("#mostabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/MoST.txt", function(data) {
+      $("#mostbib").html(data);
+   });
+});
+
 // Fancy123
 $(function(){
    $.get("./abs/Fancy123.txt", function(data) {

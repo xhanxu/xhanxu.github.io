@@ -1,0 +1,1 @@
+We present a structured matrix tailored for point clouds, which effectively incorporates local geometric features during fine-tuning. MoST achieves superior performance over existing 3D PEFT methods while enabling highly efficient parameter updates.

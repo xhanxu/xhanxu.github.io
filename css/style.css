@@ -47,11 +47,41 @@
   table.pub_table {
     table-layout: fixed;
     width: 100%;
-    border-spacing: 0px 10px;
+    border-spacing: 0px 20px;
+  }
+  
+  table.pub_table tr {
+    background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  table.pub_table tr:hover {
+    background-color: rgba(240, 240, 240, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
   
   table.pub_table tr.focus {
-    background-color:lightgoldenrodyellow;
+    background-color: rgba(238, 238, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  table.pub_table tr.focus:hover {
+    background-color: rgba(230, 230, 255, 0.95);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  table.pub_table tr td {
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  table.pub_table tr.focus td {
+    border-radius: 15px;
   }
 
   td.pub_td1 iframe {
@@ -174,6 +204,8 @@
   
   h1 {
     color: #000000d3;
+    margin-bottom: 30px;
+    position: relative;
   }
   
   h2 {
@@ -518,5 +550,19 @@
   
   #huggingface { 
     vertical-align: sub;
+  }
+  
+  .section-divider {
+    height: 2px;
+    border: none;
+    border-top: 2px dashed #cccccc;
+    margin: 40px 0;
+    width: 100%;
+  }
+  
+  /* 调整内容区域的间距 */
+  .content > div > table,
+  .content > div > h1:first-child {
+    margin-top: 0;
   }
   

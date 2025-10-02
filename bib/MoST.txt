@@ -1,6 +1,7 @@
-@article{han2025most,
+@inproceedings{han2025most,
   title={MoST: Efficient Monarch Sparse Tuning for 3D Representation Learning},
   author={Han, Xu and Tang, Yuan and Xu, Jinfeng and Li, Xianzhi},
-  journal={arXiv preprint arXiv:2503.18368},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={6584--6594},
   year={2025}
 }

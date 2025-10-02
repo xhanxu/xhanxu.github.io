@@ -1,0 +1,1 @@
+PointDreamer is a zero-shot framework that leverages 2D diffusion priors with a novel project–inpaint–unproject pipeline and Non-Border-First unprojection strategy to faithfully reconstruct textured 3D meshes from colored point clouds with superior texture quality and robustness.

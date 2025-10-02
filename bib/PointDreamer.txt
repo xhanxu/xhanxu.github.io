@@ -1,0 +1,7 @@
+@article{yu2025pointdreamer,
+  title={PointDreamer: Zero-Shot 3D Textured Mesh Reconstruction From Colored Point Cloud},
+  author={Yu, Qiao and Li, Xianzhi and Tang, Yuan and Han, Xu and Xu, Jinfeng and Hu, Long and Chen, Min},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  year={2025},
+  publisher={IEEE}
+}

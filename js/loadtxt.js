@@ -1,3 +1,16 @@
+// PointDreamer
+$(function(){
+   $.get("./abs/PointDreamer.txt", function(data) {
+      $("#pointdreamerabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/PointDreamer.txt", function(data) {
+      $("#pointdreamerbib").html(data);
+   });
+});
+
 // MoST
 $(function(){
    $.get("./abs/MoST.txt", function(data) {

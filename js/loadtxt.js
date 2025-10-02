@@ -37,6 +37,19 @@ $(function(){
    });
 });
 
+// SASep
+$(function(){
+   $.get("./abs/SASep.txt", function(data) {
+      $("#sasepabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/SASep.txt", function(data) {
+      $("#sasepbib").html(data);
+   });
+});
+
 // RIDE
 $(function(){
    $.get("./abs/RIDE.txt", function(data) {

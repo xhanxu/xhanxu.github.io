@@ -1,0 +1,7 @@
+@inproceedings{xu2025sasep,
+  title={SASep: Saliency-Aware Structured Separation of Geometry and Feature for Open Set Learning on Point Clouds},
+  author={Xu, Jinfeng and Li, Xianzhi and Tang, Yuan and Han, Xu and Yu, Qiao and Hao, Yixue and Hu, Long and Chen, Min},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={27295--27304},
+  year={2025}
+}

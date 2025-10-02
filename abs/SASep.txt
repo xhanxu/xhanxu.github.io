@@ -1,0 +1,1 @@
+Our proposed SASep framework advances 3D open-set recognition by semantically decomposing objects and synthesizing pseudo-unknowns, achieving superior performance through enhanced geometric and feature-level separation.

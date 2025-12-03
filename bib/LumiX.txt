@@ -1,0 +1,9 @@
+@misc{han2025lumix,
+      title={LumiX: Structured and Coherent Text-to-Intrinsic Generation}, 
+      author={Xu Han and Biao Zhang and Xiangjun Tang and Xianzhi Li and Peter Wonka},
+      year={2025},
+      eprint={2512.02781},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.02781}, 
+}

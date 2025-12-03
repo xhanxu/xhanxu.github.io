@@ -1,0 +1,1 @@
+We present LumiX, a structured diffusion framework for coherent text-to-intrinsic generation. Conditioned on text prompts, LumiX jointly generates a comprehensive set of intrinsic maps (e.g., albedo, irradiance, normal, depth, and final color), providing a structured and physically consistent description of an underlying scene. 

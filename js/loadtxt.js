@@ -1,3 +1,16 @@
+// LumiX
+$(function(){
+   $.get("./abs/LumiX.txt", function(data) {
+      $("#lumixabs").html(data);
+   });
+});
+
+$(function(){
+   $.get("./bib/LumiX.txt", function(data) {
+      $("#lumixbib").html(data);
+   });
+});
+
 // PointDreamer
 $(function(){
    $.get("./abs/PointDreamer.txt", function(data) {

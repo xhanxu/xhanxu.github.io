@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Xu Han</title>
 
     <meta name="author" content="Xu Han" />
@@ -26,15 +27,13 @@
     ></script>
 
     <script type="text/javascript">
-      window.onload = choosePic;
-      var myPix = new Array("./about/pic.jpg");
-      function choosePic() {
-        var randomNum = Math.floor(Math.random() * myPix.length);
-        document.getElementById("myPicture").src = myPix[randomNum];
-      }
       function lastUpdate() {
-        var x = document.lastModified.substr(0, 10);
-        document.getElementById("demo").innerHTML = x;
+        var updated = new Date(document.lastModified);
+        var label = updated.toLocaleDateString("en-US", {
+          month: "long",
+          year: "numeric",
+        });
+        document.getElementById("demo").innerHTML = label;
       }
     </script>
     <script type="text/javascript" src="./js/hidebib.js"></script>
@@ -42,6 +41,39 @@
   </head>
 
   <body onload="lastUpdate()">
+    <div class="page-bg" aria-hidden="true"></div>
+    <svg class="liquid-glass-filter" aria-hidden="true" focusable="false">
+      <filter id="liquid-distortion" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.012 0.018"
+          numOctaves="2"
+          seed="7"
+          result="noise"
+        />
+        <feGaussianBlur in="noise" stdDeviation="1.8" result="softNoise" />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="softNoise"
+          scale="14"
+          xChannelSelector="R"
+          yChannelSelector="G"
+          result="displaced"
+        />
+        <feSpecularLighting
+          in="softNoise"
+          surfaceScale="7"
+          specularConstant="0.55"
+          specularExponent="28"
+          lighting-color="#ffffff"
+          result="specular"
+        >
+          <fePointLight x="-120" y="-160" z="220" />
+        </feSpecularLighting>
+        <feComposite in="specular" in2="displaced" operator="in" result="lit" />
+        <feBlend in="displaced" in2="lit" mode="screen" />
+      </filter>
+    </svg>
     <div class="content">
       <div id="container">
         <table>
@@ -51,64 +83,18 @@
                 <img
                   id="myPicture"
                   src="./about/MyPic.jpg"
-                  style="
-                    float: left;
-                    margin-top: 30px;
-                    margin-left: 30px;
-                    /* margin-right: 10px; */
-                    border-radius:50%;
-                  "
-                  width="200px"
                 />
               </td>
               <td>
                 <div id="DocInfo">
                   <div id="intro">
-                    <h1 style="font-size: 42px">Xu Han</h1>
-                    <!-- <a style="color: black"
-                      >You can call me "Han".</a
-                    ><br /> -->
-                    <!-- <br /> -->
-                    <!-- <br /> -->
-                    <!-- <a target='_blank'
-                        href='https://goo.gl/maps/vfTQ6Gbbg3gNvzTZ8'
-                        title='Location'>
-                        <font size="5"><i class='fas
-                            fa-map-marker-alt'></i></font>
-                      </a> -->
-                    <a style="color: black">
-                      <!-- HUST & KAUST -->
-                    </a
-                    ><br />
-                    <br />
-                    <!-- <a href="mailto: xxx@xxx.edu"> -->
-                      <span
-                        class="fa fa-envelope"
-                        style="color: rgb(0, 47, 167); font-size: 20px"
-                      >
-                        <span style="font-family: Ubuntu"
-                          >xhanxu [at] hust [dot] edu [dot] cn</span
-                        >
-                        <!-- <span
-                          class="fa fa-at"
-                          style="color: rgb(17, 0, 128); font-size: 20px"
-                          ><span style="font-family: Optima Bold">
-                            gmail.com</span
-                          ></span
-                        > -->
-                      </span></a
-                    >
-                    <br /><br />
+                    <h1>Xu Han</h1>
+                    <span class="contact-line">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <span>xhanxu [at] hust [dot] edu [dot] cn</span>
+                    </span>
                   </div>
-                  <!-- <br /> -->
                   <ul class="icon-list">
-                    <a
-                      style="color: rgb(0, 47, 167)"
-                      href="./about/HANXU_CV_v1215.pdf"
-                    >
-                      <span class="ai ai-cv fa-xl"></span>
-                    </a>
-
                     <a
                       style="color: rgb(33, 111, 206)"
                       href="https://scholar.google.com/citations?user=8klkFTAAAAAJ&hl=en"
@@ -120,140 +106,56 @@
                       <span class="fa-brands fa-github fa-xl"></span>
                     </a>
 
-                    <!-- <a style="color: black" href="https://huggingface.co/">
-                      <img
-                        id="huggingface"
-                        src="./about/huggingface.svg"
-                        width="25px"
-                      />
-                    </a> -->
-
-                    <!-- <a
-                      style="color: black"
-                      href="https://www.researchgate.net/profile/Yuliang-Xiu"
-                    >
-                      <span class="ai ai-researchgate fa-xl"></span>
-                    </a> -->
-
-                    <!-- <a style="color: black" href="https://dblp.org/">
-                      <span class="ai ai-dblp fa-xl"></span>
-                    </a> -->
-
-                    <!-- <span style="color: gray; font-weight: normal">|</span> -->
-                    <!-- <a
-                      style="color: black"
-                      href="https://www.linkedin.com/in/yuliangxiu"
-                    >
-                      <span class="fa fa-linkedin fa-xl"></span>
-                    </a> -->
-
-                    <!-- <a
-                      style="color: rgb(22, 106, 202)"
-                      href="https://twitter.com/"
-                    >
-                      <span class="fa-brands fa-twitter fa-xl"></span>
-                    </a> -->
-
-                    <!-- <a
-                      style="color: black"
-                      href="https://www.facebook.com/xiuyuliang1993"
-                    >
-                      <span class="fa fa-facebook fa-xl"></span>
-                    </a> -->
-
-                    <!-- <a
-                      style="color: rgb(26, 109, 197)"
-                      href="https://www.zhihu.com/people/"
-                    >
-                      <span class="fa-brands fa-zhihu fa-xl"></span>
-                    </a> -->
-
-                    <!-- <a
-                      style="color: rgb(255, 0, 0)"
-                      href="https://www.youtube.com/channel/"
-                    >
-                      <span class="fa-brands fa-youtube fa-xl"></span>
-                    </a>
-
-                    <a
-                      style="color: rgb(244, 142, 159)"
-                      href="https://space.bilibili.com/"
-                    >
-                      <span class="fa-brands fa-bilibili fa-xl"></span>
-                    </a> -->
                   </ul>
 
                   <br />
                 </div>
                 <br />
               </td>
-              <!-- <td>
-                <img
-                  id="myPicture"
-                  src="./about/pic.jpg"
-                  style="
-                    float: right;
-                    margin-top: 60px;
-                    margin-left: 30px;
-                    /* margin-right: 10px; */
-                    border-radius: 100%;
-                  "
-                  width="200px"
-                />
-              </td> -->
             </tr>
           </tbody>
         </table>
         <table>
           <tr>
             <td>
-              <br /><br />
-              <h1>Biography</h1>
-              <h2>Who Am I?</h2>
-              I am a final-year CS graduate student at 
-              <a href="http://english.hust.edu.cn/" target="_blank">Huazhong University of Science and Technology</a>, 
-              under the guidance of 
-              <a href="https://nini-lxz.github.io/" target="_blank">Prof. Xianzhi Li</a>. 
-              I was a research intern at 
-              <a href="https://www.kaust.edu.sa/en/" target="_blank">King Abdullah University of Science and Technology (KAUST)</a>, 
-              working with 
-              <a href="https://peterwonka.net" target="_blank">Prof. Peter Wonka</a>.
-              Prior to this, I received my B.Eng. degree with honors from the School of Computer Science at 
-              <a href="https://www.en.sdu.edu.cn/" target="_blank">Shandong University</a> in 2023, 
-              during which I worked closely with 
-              <a href="https://xiaomengbai.github.io/" target="_blank">Prof. Mengbai Xiao</a>.
-              
-              <h2>What do I research?</h2>
-              Currently, I find my passion in the intersection of Computer Vision,
-              Computer Graphics, and Deep Learning.
-               <!-- (or <a style="color: rgb(0, 47, 167)">AIGC</a> for short). -->
-              <!-- Also, I'm interested in AI4X, especially generative models for biology (drug discovery) and architecture (autodesign). -->
-              More specifically, my areas of focus include:
-              <ul>
-                <!-- <li>AIGC</li> -->
-                 <li>Structured World Models</li>
-                <li>Generative Models</li>
-                <li>Representation Learning</li>
-                <!-- <li>Creative AI</li> -->
-                <!-- <li>(Generative) Neural Rendering</li> -->
-                <!-- <li>Generative Models</li> -->
-                <!-- <li>Computer Vision & Graphics</li> -->
-                <!-- <li>Computer Graphics</li> -->
-                <!-- <li>Deep Learning</li> -->
-                <!-- <li>Creative AI & Generative Models</li> -->
-              </ul>
+              <section class="bio-copy">
+                <h1>Biography</h1>
+                <h2>Who Am I?</h2>
+                <p>
+                  I am a final-year CS graduate student at
+                  <a href="http://english.hust.edu.cn/" target="_blank">Huazhong University of Science and Technology</a>,
+                  under the guidance of
+                  <a href="https://nini-lxz.github.io/" target="_blank">Prof. Xianzhi Li</a>.
+                  I was a research intern at
+                  <a href="https://www.kaust.edu.sa/en/" target="_blank">King Abdullah University of Science and Technology (KAUST)</a>,
+                  working with
+                  <a href="https://peterwonka.net" target="_blank">Prof. Peter Wonka</a>.
+                  Prior to this, I received my B.Eng. degree with honors from the School of Computer Science at
+                  <a href="https://www.en.sdu.edu.cn/" target="_blank">Shandong University</a> in 2023,
+                  during which I worked closely with
+                  <a href="https://xiaomengbai.github.io/" target="_blank">Prof. Mengbai Xiao</a>.
+                </p>
 
-              <a style="color: rgb(0, 47, 167)">Always open to collaborations in the related fields! 
-                <!-- Actively seeking opportunities for research intern, visiting/RA. And, yes, PhD positions (2026 Fall)! </a> -->
+                <h2>What do I research?</h2>
+                <p>
+                  Currently, I find my passion in the intersection of Computer Vision, Computer Graphics, and Deep Learning.
+                  More specifically, my areas of focus include:
+                </p>
+                <ul>
+                  <li>Structured World Models</li>
+                  <li>Generative Models</li>
+                  <li>Representation Learning</li>
+                </ul>
 
-              <h2>Where's my wonderland?</h2>
-              <!-- My aspiration is to use the power of Computer Vision (2D->3D +), Computer
-              Graphics (3D->2D +), and Deep Learning (Magic =) to build a vivid and
-              immersive science-fiction world that captures the imagination (Wonderland!). -->
-              My aspiration is to design principled models to perceive the world and craft stunning visuals, from
-              controllable digital art to cinematic aesthetics that balance imagination with 
-              elegance, or sci-fi worlds so vivid they hijack your dreams.
-              <br /><br />
+                <p class="collab-note">Always open to collaborations in the related fields!</p>
+
+                <h2>Where's my wonderland?</h2>
+                <p>
+                  My aspiration is to design principled models to perceive the world and craft stunning visuals, from
+                  controllable digital art to cinematic aesthetics that balance imagination with elegance, or sci-fi worlds
+                  so vivid they hijack your dreams.
+                </p>
+              </section>
             </td>
           </tr>
         </table>
@@ -270,7 +172,7 @@
         /></a> -->
         <!-- <br /><br /> -->
 
-        <hr class="section-divider">
+        <!-- <hr class="section-divider">
 
         <h1>News</h1>
         [02/2026] <a href="https://arxiv.org/abs/2512.02781v1">LumiX</a> got accepted by <strong>CVPR 2026</strong>!<br />
@@ -296,7 +198,7 @@
           [10/2022] Honored to be awarded the National Scholarship (Top 0.2% nationwide)!<br />
           
         </div>
-        <br /><br />
+        <br /><br /> -->
 
         <hr class="section-divider">
 
@@ -358,7 +260,7 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="lumixbib" xml:space="preserve" style="display: none"></pre>
-              <span id="lumixabs" style="display: none"; margin-top: 10px></span>
+              <span id="lumixabs" class="blurb" style="display: none"></span>
             </td>
           </tr>          
 
@@ -400,7 +302,7 @@
                 ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
                 >Home&nbsp;</a
               >
-              <a class="box" href="hhttps://arxiv.org/abs/2406.15811v3"
+              <a class="box" href="https://arxiv.org/abs/2406.15811v3"
                 ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
               </a>
 
@@ -412,7 +314,7 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="pointdreamerbib" xml:space="preserve" style="display: none"></pre>
-              <span id="pointdreamerabs" style="display: none"; margin-top: 10px></span>
+              <span id="pointdreamerabs" class="blurb" style="display: none"></span>
             </td>
           </tr>
 
@@ -463,7 +365,7 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="mostbib" xml:space="preserve" style="display: none"></pre>
-              <span id="mostabs" style="display: none"; margin-top: 10px></span>
+              <span id="mostabs" class="blurb" style="display: none"></span>
             </td>
           </tr>
 
@@ -517,7 +419,7 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="fancy123bib" xml:space="preserve" style="display: none"></pre>
-              <span id="fancy123abs" style="display: none"; margin-top: 10px></span>
+              <span id="fancy123abs" class="blurb" style="display: none"></span>
             </td>
           </tr>
 
@@ -573,7 +475,7 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="sasepbib" xml:space="preserve" style="display: none"></pre>
-              <span id="sasepabs" style="display: none"; margin-top: 10px></span>
+              <span id="sasepabs" class="blurb" style="display: none"></span>
             </td>
           </tr>
 
@@ -628,62 +530,10 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="greenplmbib" xml:space="preserve" style="display: none"></pre>
-              <span id="greenplmabs" style="display: none"; margin-top: 10px></span>
+              <span id="greenplmabs" class="blurb" style="display: none"></span>
             </td>
           </tr>
           
-
-          <!-- <tr id="wang2024ride">
-            <td class="pub_td1">
-              <img src="./about/RIDE.png" />
-            </td>
-            <td class="pub_td2">
-              <b
-                >RIDE: Boosting 3D Object Detection for LiDAR Point Clouds via Rotation-Invariant Analysis
-                &nbsp;</b
-              >
-
-              <br /><br />
-              Zhaoxuan Wang,
-              <u><strong style="color: purple">Xu Han</strong></u>, 
-              Hongxin Liu,
-              <a href="https://nini-lxz.github.io/">Xianzhi Li<sup></sup></a>
-              <br /><br />
-              <i>
-                <strong
-                  style="color: brown"
-                  >arXiv</strong
-                ></i
-              ><br /><br />
-
-              <a
-                shape="rect"
-                href="javascript:toggleabs(&#39;wang2024ride&#39;)"
-                class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true"
-                  >&nbsp;</i
-                >Intro&nbsp;</a
-              >
-              <a class="box" href="https://arxiv.org/abs/2408.15643"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
-                >Home&nbsp;</a
-              >
-              <a class="box" href="https://arxiv.org/abs/2408.15643"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper
-              </a>
-
-              <a
-                shape="rect"
-                href="javascript:togglebib(&#39;wang2024ride&#39;)"
-                class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
-                >Bibtex&nbsp;</a
-              >
-              <pre id="ridebib" xml:space="preserve" style="display: none"></pre>
-              <span id="rideabs" style="display: none"; margin-top: 10px></span>
-            </td>
-          </tr> -->
-
           <tr id="han2024mamba3d" class="focus">
             <td class="pub_td1">
               <img src="./about/Mamba3D.png" />
@@ -731,7 +581,7 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="mamba3dbib" xml:space="preserve" style="display: none"></pre>
-              <span id="mamba3dabs" style="display: none"; margin-top: 10px></span>
+              <span id="mamba3dabs" class="blurb" style="display: none"></span>
             </td>
           </tr>
 
@@ -786,7 +636,7 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="minigpt3dbib" xml:space="preserve" style="display: none"></pre>
-              <span id="minigpt3dabs" style="display: none"; margin-top: 10px></span>
+              <span id="minigpt3dabs" class="blurb" style="display: none"></span>
             </td>
           </tr>
 
@@ -839,145 +689,9 @@
                 >Bibtex&nbsp;</a
               >
               <pre id="patchdpccbib" xml:space="preserve" style="display: none"></pre>
-              <span id="patchdpccabs" style="display: none"; margin-top: 10px></span>
+              <span id="patchdpccabs" class="blurb" style="display: none"></span>
             </td>
           </tr>
-
-          
-
-          <!-- <tr id="xiu2023econ" class="focus">
-            <td class="pub_td1">
-              <img src="./about/econ.gif" />
-            </td>
-            <td class="pub_td2">
-              <b
-                >ECON: Explicit Clothed humans Optimized via Normal
-                integration&nbsp;</b
-              ><iframe
-                src="https://ghbtns.com/github-btn.html?user=yuliangxiu&repo=ECON&type=star&count=true&v=2&size=small"
-                frameborder="0"
-                scrolling="0"
-                width="100"
-                height="20"
-              ></iframe
-              ><br />
-              <a
-                href="https://huggingface.co/spaces/Yuliang/ECON"
-                style="padding-left: 0.5rem; vertical-align: top"
-                ><img
-                  style="margin-top: 0.5em"
-                  src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-ECON-orange"
-              /></a>
-              <a
-                href="https://colab.research.google.com/drive/1YRgwoRCZIrSB2e7auEWFyG10Xzjbrbno?usp=sharing"
-                style="padding-left: 0.5rem; vertical-align: top"
-                ><img
-                  style="margin-top: 0.5em"
-                  src="https://colab.research.google.com/assets/colab-badge.svg"
-                  alt="Google Colab"
-              /></a>
-              <a
-                href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-windows.md"
-              >
-                <img
-                  style="
-                    height: 20px;
-                    outline: 1px solid grey;
-                    border-radius: 5pt;
-                    margin-top: 0.5em;
-                    margin-left: 0.5em;
-                  "
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Unofficial_Windows_logo_variant_-_2002%E2%80%932012_%28Multicolored%29.svg/1161px-Unofficial_Windows_logo_variant_-_2002%E2%80%932012_%28Multicolored%29.svg.png"
-                />
-              </a>
-              <a
-                href="https://github.com/YuliangXiu/ECON/blob/master/docs/installation-docker.md"
-              >
-                <img
-                  style="
-                    height: 20px;
-                    outline: 1px solid grey;
-                    border-radius: 5pt;
-                    margin-top: 0.5em;
-                    margin-left: 0.5em;
-                  "
-                  src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"
-                />
-              </a>
-              <a href="https://carlosedubarreto.gumroad.com/l/CEB_ECON">
-                <img
-                  style="
-                    height: 20px;
-                    outline: 1px solid grey;
-                    border-radius: 5pt;
-                    margin-top: 0.5em;
-                    margin-left: 0.5em;
-                  "
-                  src="https://www.nicepng.com/png/detail/343-3436343_blender-logo-png.png"
-                />
-              </a>
-
-              <br /><br />
-              <u><strong style="color: purple">Yuliang Xiu</strong></u
-              >, <a href="https://is.mpg.de/~jyang">Jinlong Yang</a>,
-              <a href="https://hoshino042.github.io/homepage/">Xu Cao</a>,
-              <a href="https://ps.is.mpg.de/~dtzionas">Dimitrios Tzionas</a>,
-              <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
-              <br />
-              <i>
-                Computer Vision and Pattern Recognition 2023 (<strong
-                  style="color: brown"
-                >
-                  CVPR 2023, Highlight</strong
-                >)
-              </i>
-              <br /><br />
-
-              <a
-                shape="rect"
-                href="javascript:toggleabs(&#39;xiu2023econ&#39;)"
-                class="toggleabs"
-                ><i class="fas fa-angle-double-down" aria-hidden="true"
-                  >&nbsp;</i
-                >Intro&nbsp;</a
-              >
-              <a href="https://xiuyuliang.cn/econ/"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i
-                >Home&nbsp;</a
-              >
-              <a href=""
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i></a
-              >[<a href="https://arxiv.org/abs/2212.07422">arXiv</a>,
-              <a href="https://readpaper.com/paper/4736821012688027649"
-                >Reader</a
-              >]
-
-              <a href=""
-                ><i class="fa fa-video" aria-hidden="true">&nbsp;</i
-                >Video&nbsp;</a
-              >[<a href="https://youtu.be/5PEd_p90kS0">En</a>,
-              <a
-                href="https://www.bilibili.com/video/BV1NM4y1B7UN/?share_source=copy_web&vd_source=5f4004d0708487723704b9e4bcf50868"
-                >中</a
-              >]
-              <a href="https://zhuanlan.zhihu.com/p/626295986"
-                ><i class="fab fa-quora">&nbsp;</i>Zhihu&nbsp;</a
-              >
-              <a
-                shape="rect"
-                href="javascript:togglebib(&#39;xiu2023econ&#39;)"
-                class="togglebib"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i
-                >Bibtex&nbsp;</a
-              >
-              <pre
-                id="econbib"
-                xml:space="preserve"
-                style="display: none"
-              ></pre>
-              <span id="econabs" style="display: none"></span>
-            </td>
-          </tr> -->
         </table>
 
         <hr class="section-divider">
@@ -995,7 +709,7 @@
           </li>
         </ul>
 
-        <hr class="section-divider">
+        <!-- <hr class="section-divider">
 
         <h1>Honors & Awards</h1>
         <ul>
@@ -1056,7 +770,7 @@
             [11/2021]
             First Prize in Contemporary Undergraduate Mathematical Contest in Modeling (Top 0.6% in 45K teams)
           </li>
-        </ul>
+        </ul> -->
 
         <!-- <h1>Blogs</h1>
         <ul>
@@ -1085,7 +799,7 @@
           ></strong>
         </div>
 
-        <div align="center">
+        <!-- <div align="center">
           <br />
           <span style="color: rgba(107, 98, 163, 0.596)" id="web"
             >This template is modified from
@@ -1094,7 +808,7 @@
             thanks to the
             <a href="https://github.com/jonbarron/website">source code</a>. Respect!
           </span>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>

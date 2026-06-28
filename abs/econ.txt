@@ -1,1 +1,0 @@
-ECON is designed for "Human digitization from a color image", which combines the best properties of implicit and explicit representations, to infer high-fidelity 3D clothed humans from in-the-wild images, even with loose clothing or in challenging poses. ECON also supports multi-person reconstruction and SMPL-X based animation.

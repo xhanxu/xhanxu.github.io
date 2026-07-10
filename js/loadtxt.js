@@ -40,3 +40,20 @@ async function loadPublicationText(panel) {
     if (copyButton) copyButton.disabled = panel.dataset.loadState !== "loaded";
   }
 }
+
+const backgroundImages = [
+  "./about/26-Tahoe-Light-bg.jpg",
+  "./about/pexels-steve-29097440.jpg",
+  "./about/pexels-thales13-38484552.jpg",
+];
+
+function setRandomBackgroundImage() {
+  const pageBg = document.querySelector(".page-bg");
+  if (!pageBg || backgroundImages.length === 0) return;
+
+  const selectedImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
+  const selectedImageUrl = new URL(selectedImage, document.baseURI).href;
+  document.documentElement.style.setProperty("--page-bg-image", `url("${selectedImageUrl}")`);
+}
+
+setRandomBackgroundImage();

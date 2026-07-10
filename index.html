@@ -8,173 +8,140 @@
     <meta name="author" content="Xu Han" />
     <meta
       name="description"
-      content="Xu Han — CS researcher at HUST &amp; KAUST intern. Working at the intersection of Computer Vision, Computer Graphics, and Deep Learning: Structured World Models, Generative Models, Representation Learning."
+      content="Xu Han — a computer science researcher working across machine learning, generative models, computer vision, graphics, and 3D learning."
     />
+    <meta property="og:title" content="Xu Han — Research Portfolio" />
+    <meta property="og:description" content="Research across machine learning, generative models, computer vision, graphics, and 3D learning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xhanxu.github.io/" />
+    <meta property="og:image" content="https://xhanxu.github.io/about/MyPic.jpg" />
 
     <link rel="icon" href="./about/bitbug_favicon.ico" type="image/x-icon" />
 
     <link href="./css/style.css" rel="stylesheet" media="all" type="text/css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css"
-    />
-
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-2.2.0.min.js"
-    ></script>
-
-    <script
-      src="https://kit.fontawesome.com/57fb8d417e.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script type="text/javascript">
-      function lastUpdate() {
-        var updated = new Date(document.lastModified);
-        var label = updated.toLocaleDateString("en-US", {
-          month: "long",
-          year: "numeric",
-        });
-        document.getElementById("demo").innerHTML = label;
-      }
-    </script>
-    <script type="text/javascript" src="./js/hidebib.js"></script>
-    <script type="text/javascript" src="./js/loadtxt.js"></script>
+    <script defer src="./js/hidebib.js"></script>
+    <script defer src="./js/loadtxt.js"></script>
   </head>
 
-  <body onload="lastUpdate()">
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="page-bg" aria-hidden="true"></div>
-
-    <!-- Hidden SVG filter for liquid-glass distortion reference -->
-    <svg class="liquid-glass-filter" aria-hidden="true" focusable="false">
-      <filter id="liquid-distortion" x="-20%" y="-20%" width="140%" height="140%">
-        <feTurbulence
-          type="fractalNoise"
-          baseFrequency="0.012 0.018"
-          numOctaves="2"
-          seed="7"
-          result="noise"
-        />
-        <feGaussianBlur in="noise" stdDeviation="1.8" result="softNoise" />
-        <feDisplacementMap
-          in="SourceGraphic"
-          in2="softNoise"
-          scale="14"
-          xChannelSelector="R"
-          yChannelSelector="G"
-          result="displaced"
-        />
-        <feSpecularLighting
-          in="softNoise"
-          surfaceScale="7"
-          specularConstant="0.55"
-          specularExponent="28"
-          lighting-color="#ffffff"
-          result="specular"
-        >
-          <fePointLight x="-120" y="-160" z="220" />
-        </feSpecularLighting>
-        <feComposite in="specular" in2="displaced" operator="in" result="lit" />
-        <feBlend in="displaced" in2="lit" mode="screen" />
-      </filter>
-    </svg>
 
     <!-- Sticky Glass Navigation -->
     <nav class="glass-nav" id="glass-nav" aria-label="Page navigation">
+      <a href="#top" class="nav-monogram" aria-label="Back to top">XH</a>
       <a href="#biography" class="nav-link" data-section="biography">Biography</a>
       <a href="#publications" class="nav-link" data-section="publications">Publications</a>
       <a href="#service" class="nav-link" data-section="service">Service</a>
     </nav>
 
-    <div class="content">
+    <main class="content" id="main-content" tabindex="-1">
       <div id="container">
 
         <!-- ── Hero ── -->
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  id="myPicture"
-                  src="./about/MyPic.jpg"
-                  alt="Portrait of Xu Han"
-                />
-              </td>
-              <td>
-                <div id="DocInfo">
-                  <div id="intro">
-                    <h1>Xu Han</h1>
-                    <p class="hero-tagline">CS Researcher &middot; Generative World Models</p>
-                    <span class="contact-line">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                      <span>xhanxu [at] hust [dot] edu [dot] cn</span>
-                    </span>
-                  </div>
-                  <ul class="icon-list">
-                    <a
-                      href="https://scholar.google.com/citations?user=8klkFTAAAAAJ&hl=en"
-                      aria-label="Google Scholar profile"
-                      title="Google Scholar"
-                    >
-                      <span class="ai ai-google-scholar fa-xl" style="color: rgb(33,111,206)"></span>
-                    </a>
+        <header class="hero" aria-labelledby="page-title">
+          <div id="DocInfo">
+            <div id="intro">
+              <h1 id="page-title">Xu Han</h1>
+              <p class="hero-tagline">Make it count.</p>
+            </div>
+            <div class="hero-actions">
+              <a class="contact-line" href="mailto:xhanxu@hust.edu.cn">
+                <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8-.25L12 12.08l7.2-5.58H4.8Zm14.7 1.52-6.58 5.1a1.5 1.5 0 0 1-1.84 0L4.5 8.02v9.23c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.02Z" />
+                </svg>
+                <span>xhanxu [at] hust [dot] edu [dot] cn</span>
+              </a>
+              <div class="icon-list" role="group" aria-label="External profiles">
+                <a
+                  href="https://scholar.google.com/citations?user=8klkFTAAAAAJ&amp;hl=en"
+                  aria-label="Google Scholar profile"
+                  title="Google Scholar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img class="profile-icon scholar-icon" src="./about/google-scholar.svg" alt="" width="20" height="20" />
+                </a>
 
-                    <a
-                      href="https://github.com/xhanxu"
-                      aria-label="GitHub profile"
-                      title="GitHub"
-                    >
-                      <span class="fa-brands fa-github fa-xl"></span>
-                    </a>
-                  </ul>
-                  <br />
-                </div>
-                <br />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                <a
+                  href="https://github.com/xhanxu"
+                  aria-label="GitHub profile"
+                  title="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img class="profile-icon github-icon" src="./about/github.svg" alt="" width="20" height="20" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portrait-shell">
+            <img
+              id="myPicture"
+              src="./about/MyPic.jpg"
+              alt="Portrait of Xu Han"
+              width="300"
+              height="260"
+              fetchpriority="high"
+            />
+          </div>
+        </header>
 
         <!-- ── Biography ── -->
         <section id="biography" class="bio-copy">
-          <h1>Biography</h1>
-          <h2>Who Am I?</h2>
-          <p>
-            I am a final-year CS graduate student at
-            <a href="http://english.hust.edu.cn/" target="_blank">Huazhong University of Science and Technology</a>,
-            under the guidance of
-            <a href="https://nini-lxz.github.io/" target="_blank">Prof. Xianzhi Li</a>.
-            I was a research intern at
-            <a href="https://www.kaust.edu.sa/en/" target="_blank">King Abdullah University of Science and Technology (KAUST)</a>,
-            working with
-            <a href="https://peterwonka.net" target="_blank">Prof. Peter Wonka</a>.
-            Prior to this, I received my B.Eng. degree with honors from the School of Computer Science at
-            <a href="https://www.en.sdu.edu.cn/" target="_blank">Shandong University</a> in 2023,
-            during which I worked closely with
-            <a href="https://xiaomengbai.github.io/" target="_blank">Prof. Mengbai Xiao</a>.
-          </p>
+          <h2 class="section-title">Biography</h2>
+          <div class="bio-grid">
+            <div class="bio-row">
+              <h3>Background</h3>
+              <div class="bio-detail">
+                <p>
+                  I am a final-year graduate student in computer science at
+                  <a href="https://english.hust.edu.cn/" target="_blank" rel="noopener noreferrer">Huazhong University of Science and Technology</a>,
+                  advised by
+                  <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Prof. Xianzhi Li</a>.
+                  I was a research intern at
+                  <a href="https://www.kaust.edu.sa/en/" target="_blank" rel="noopener noreferrer">King Abdullah University of Science and Technology (KAUST)</a>,
+                  working with
+                  <a href="https://peterwonka.net" target="_blank" rel="noopener noreferrer">Prof. Peter Wonka</a>.
+                  Before that, I received my B.Eng. degree with honors from the School of Computer Science at
+                  <a href="https://www.en.sdu.edu.cn/" target="_blank" rel="noopener noreferrer">Shandong University</a> in 2023,
+                  where I worked closely with
+                  <a href="https://xiaomengbai.github.io/" target="_blank" rel="noopener noreferrer">Prof. Mengbai Xiao</a>.
+                </p>
+              </div>
+            </div>
 
-          <h2>What do I research?</h2>
-          <p>
-            Currently, I find my passion in the intersection of Computer Vision, Computer Graphics, and Deep Learning.
-            More specifically, my areas of focus include:
-          </p>
-          <div class="research-chips" role="list">
-            <span class="chip" role="listitem">Structured World Models</span>
-            <span class="chip" role="listitem">Generative Models</span>
-            <span class="chip" role="listitem">Representation Learning</span>
+            <div class="bio-row">
+              <h3>Research interests</h3>
+              <div class="bio-detail">
+                <p>
+                  My research lies at the intersection of generative modeling, 3D vision, and multimodal learning. I
+                  study how models can learn useful structure from visual and spatial data, and use it to understand
+                  and generate complex scenes.
+                </p>
+                <div class="research-chips" role="list">
+                  <span class="chip" role="listitem">World Models</span>
+                  <span class="chip" role="listitem">Generative Modeling</span>
+                  <span class="chip" role="listitem">3D Vision</span>
+                  <span class="chip" role="listitem">Multimodal Learning</span>
+                </div>
+                <p class="collab-note">I’m always open to thoughtful collaborations across these areas.</p>
+              </div>
+            </div>
+
+            <div class="bio-row">
+              <h3>Research outlook</h3>
+              <div class="bio-detail">
+                <p>
+                  I am particularly interested in world models that capture not only what an environment looks like,
+                  but also how it changes and responds to action. I hope to develop models that draw on visual,
+                  geometric, and linguistic evidence to predict future states and support reasoning and action in
+                  dynamic environments.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <p class="collab-note">Always open to collaborations in the related fields!</p>
-
-          <h2>Where's my wonderland?</h2>
-          <p>
-            My aspiration is to design principled models to perceive the world and craft stunning visuals, from
-            controllable digital art to cinematic aesthetics that balance imagination with elegance, or sci-fi worlds
-            so vivid they hijack your dreams.
-          </p>
         </section>
 
         <!-- News section intentionally omitted -->
@@ -182,311 +149,437 @@
         <!-- ── Publications ── -->
         <hr class="section-divider" />
 
-        <h1 id="publications">Publications</h1>
-
-        I'm dedicated to understanding and generating immersive 3D digital worlds!
-        <br />(*equal contribution, <sup>&dagger;</sup>corresponding author)<br />
-
-        <br />
+        <div class="section-heading" id="publications">
+          <div>
+            <span class="section-kicker">Research output</span>
+            <h2 class="section-title">Publications</h2>
+          </div>
+          <p>
+            My work spans generative modeling, 3D vision, and multimodal learning.<br />
+            <small>* equal contribution · <sup>&dagger;</sup> corresponding author</small>
+          </p>
+        </div>
 
         <div class="pub-list">
 
           <!-- LumiX -->
-          <div id="han2025lumix" class="pub-card focus">
+          <article id="han2025lumix" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/LumiX_page.png" alt="LumiX teaser" />
+              <picture>
+                <source srcset="./about/LumiX_page.webp" type="image/webp" />
+                <img src="./about/LumiX_page.png" alt="LumiX teaser" width="920" height="632" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>LumiX: Structured and Coherent Text-to-Intrinsic Generation&nbsp;</b>
+              <h3 class="pub-title">LumiX: Structured and Coherent Text-to-Intrinsic Generation</h3>
+              <p class="pub-authors"><strong class="self-author">Xu Han</strong>,
+              <a href="https://1zb.github.io/" target="_blank" rel="noopener noreferrer">Biao Zhang</a>,
+              <a href="https://xjtang.com/" target="_blank" rel="noopener noreferrer">Xiangjun Tang</a>,
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li</a>,
+              <a href="https://peterwonka.net/" target="_blank" rel="noopener noreferrer">Peter Wonka</a></p>
+              <div class="pub-footer">
+                <span class="venue">CVPR 2026</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <br /><br />
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>,
-              Biao Zhang,
-              Xiangjun Tang,
-              Xianzhi Li,
-              Peter Wonka
-              <br /><br />
-              <i><strong style="color: brown">CVPR 2026</strong></i><br /><br />
-
-              <a shape="rect" href="javascript:toggleabs('han2025lumix')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://xhanxu.github.io/lumix.github.io/"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2512.02781v1"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('han2025lumix')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="han2025lumix"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://xhanxu.github.io/lumix.github.io/"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2512.02781v1"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="han2025lumix"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="lumixbib" xml:space="preserve" style="display: none"></pre>
-              <span id="lumixabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="lumixabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="lumixabs" class="blurb"></p>
+            </section>
+            <section id="lumixbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="lumixbib">Copy</button>
+              </div>
+              <pre id="lumixbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- PointDreamer -->
-          <div id="yu2025pointdreamer" class="pub-card">
+          <article id="yu2025pointdreamer" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/PointDreamer_v1.png" alt="PointDreamer teaser" />
+              <picture>
+                <source srcset="./about/PointDreamer_v1.webp" type="image/webp" />
+                <img src="./about/PointDreamer_v1.png" alt="PointDreamer teaser" width="1410" height="1022" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>PointDreamer: Zero-Shot 3D Textured Mesh Reconstruction From Colored Point Cloud&nbsp;</b>
-
-              <br /><br />
-              Qiao Yu,
-              <a href="https://nini-lxz.github.io/">Xianzhi Li<sup>&dagger;</sup></a>,
+              <h3 class="pub-title">PointDreamer: Zero-Shot 3D Textured Mesh Reconstruction From Colored Point Cloud</h3>
+              <p class="pub-authors">Qiao Yu,
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li<sup>&dagger;</sup></a>,
               Yuan Tang,
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>,
+              <strong class="self-author">Xu Han</strong>,
               Long Hu,
               Yixue Hao,
-              Min Chen
-              <br /><br />
-              <i><strong style="color: brown">TVCG 2025</strong></i><br /><br />
+              Min Chen</p>
+              <div class="pub-footer">
+                <span class="venue">TVCG 2025</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('yu2025pointdreamer')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://github.com/YuQiao0303/PointDreamer"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2406.15811v3"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('yu2025pointdreamer')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="yu2025pointdreamer"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://github.com/YuQiao0303/PointDreamer"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2406.15811v3"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="yu2025pointdreamer"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="pointdreamerbib" xml:space="preserve" style="display: none"></pre>
-              <span id="pointdreamerabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="pointdreamerabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="pointdreamerabs" class="blurb"></p>
+            </section>
+            <section id="pointdreamerbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="pointdreamerbib">Copy</button>
+              </div>
+              <pre id="pointdreamerbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- MoST -->
-          <div id="han2025most" class="pub-card focus">
+          <article id="han2025most" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/MOST_profile.png" alt="MoST teaser" />
+              <picture>
+                <source srcset="./about/MOST_profile.webp" type="image/webp" />
+                <img src="./about/MOST_profile.png" alt="MoST teaser" width="1181" height="706" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>MoST: Efficient Monarch Sparse Tuning for 3D Representation Learning&nbsp;</b>
-
-              <br /><br />
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>,
+              <h3 class="pub-title">MoST: Efficient Monarch Sparse Tuning for 3D Representation Learning</h3>
+              <p class="pub-authors"><strong class="self-author">Xu Han</strong>,
               Yuan Tang,
               Jinfeng Xu,
-              <a href="https://nini-lxz.github.io/">Xianzhi Li<sup>&dagger;</sup></a>
-              <br /><br />
-              <i><strong style="color: brown">CVPR 2025</strong></i><br /><br />
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li<sup>&dagger;</sup></a></p>
+              <div class="pub-footer">
+                <span class="venue">CVPR 2025</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('han2025most')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://github.com/xhanxu/MoST"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2503.18368"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('han2025most')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="han2025most"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://github.com/xhanxu/MoST"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2503.18368"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="han2025most"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="mostbib" xml:space="preserve" style="display: none"></pre>
-              <span id="mostabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="mostabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="mostabs" class="blurb"></p>
+            </section>
+            <section id="mostbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="mostbib">Copy</button>
+              </div>
+              <pre id="mostbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- Fancy123 -->
-          <div id="yu2025fancy123" class="pub-card">
+          <article id="yu2025fancy123" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/Fancy123.png" alt="Fancy123 teaser" />
+              <picture>
+                <source srcset="./about/Fancy123.webp" type="image/webp" />
+                <img src="./about/Fancy123.png" alt="Fancy123 teaser" width="974" height="692" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>Fancy123: One Image to High-Quality 3D Mesh Generation via Plug-and-Play Deformation&nbsp;</b>
-
-              <br /><br />
-              Qiao Yu,
-              Xianzhi Li,
+              <h3 class="pub-title">Fancy123: One Image to High-Quality 3D Mesh Generation via Plug-and-Play Deformation</h3>
+              <p class="pub-authors">Qiao Yu,
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li</a>,
               Yuan Tang,
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>,
+              <strong class="self-author">Xu Han</strong>,
               Long Hu,
               Yixue Hao,
-              Min Chen
-              <br /><br />
-              <i><strong style="color: brown">CVPR 2025</strong></i><br /><br />
+              Min Chen</p>
+              <div class="pub-footer">
+                <span class="venue">CVPR 2025</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('yu2025fancy123')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://github.com/YuQiao0303/Fancy123"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2411.16185"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('yu2025fancy123')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="yu2025fancy123"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://github.com/YuQiao0303/Fancy123"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2411.16185"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="yu2025fancy123"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="fancy123bib" xml:space="preserve" style="display: none"></pre>
-              <span id="fancy123abs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="fancy123abs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="fancy123abs" class="blurb"></p>
+            </section>
+            <section id="fancy123bib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="fancy123bib">Copy</button>
+              </div>
+              <pre id="fancy123bib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- SASep -->
-          <div id="xu2025sasep" class="pub-card">
+          <article id="xu2025sasep" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/SASep.png" alt="SASep teaser" />
+              <picture>
+                <source srcset="./about/SASep.webp" type="image/webp" />
+                <img src="./about/SASep.png" alt="SASep teaser" width="1383" height="911" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>SASep: Saliency-Aware Structured Separation of Geometry and Feature for Open Set Learning on Point Clouds&nbsp;</b>
-
-              <br /><br />
-              Jinfeng Xu,
-              Xianzhi Li,
+              <h3 class="pub-title">SASep: Saliency-Aware Structured Separation of Geometry and Feature for Open Set Learning on Point Clouds</h3>
+              <p class="pub-authors">Jinfeng Xu,
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li</a>,
               Yuan Tang,
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>,
+              <strong class="self-author">Xu Han</strong>,
               Qiao Yu,
               Yixue Hao,
               Long Hu,
-              Min Chen
-              <br /><br />
-              <i><strong style="color: brown">CVPR 2025</strong></i><br /><br />
+              Min Chen</p>
+              <div class="pub-footer">
+                <span class="venue">CVPR 2025</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('xu2025sasep')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://github.com/JinfengX/SASep"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2506.13224"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('xu2025sasep')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="xu2025sasep"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://github.com/JinfengX/SASep"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2506.13224"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="xu2025sasep"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="sasepbib" xml:space="preserve" style="display: none"></pre>
-              <span id="sasepabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="sasepabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="sasepabs" class="blurb"></p>
+            </section>
+            <section id="sasepbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="sasepbib">Copy</button>
+              </div>
+              <pre id="sasepbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- GreenPLM -->
-          <div id="tang2024greenplm" class="pub-card focus">
+          <article id="tang2024greenplm" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/GreenPLM_teaser.png" alt="GreenPLM teaser" />
+              <picture>
+                <source srcset="./about/GreenPLM_teaser.webp" type="image/webp" />
+                <img src="./about/GreenPLM_teaser.png" alt="GreenPLM teaser" width="935" height="526" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>More Text, Less Point: Towards 3D Data-Efficient Point-Language Understanding&nbsp;</b>
-
-              <br /><br />
-              Yuan Tang*,
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han*</strong></u>,
-              <a href="https://nini-lxz.github.io/">Xianzhi Li<sup>&dagger;</sup></a>,
+              <h3 class="pub-title">More Text, Less Point: Towards 3D Data-Efficient Point-Language Understanding</h3>
+              <p class="pub-authors">Yuan Tang*,
+              <strong class="self-author">Xu Han*</strong>,
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li<sup>&dagger;</sup></a>,
               Qiao Yu,
               Jinfeng Xu,
               Yixue Hao,
               Long Hu,
-              Min Chen
-              <br /><br />
-              <i><strong style="color: brown">AAAI 2025</strong></i><br /><br />
+              Min Chen</p>
+              <div class="pub-footer">
+                <span class="venue">AAAI 2025</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('tang2024greenplm')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://github.com/TangYuan96/GreenPLM"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2408.15966"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('tang2024greenplm')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="tang2024greenplm"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://github.com/TangYuan96/GreenPLM"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2408.15966"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="tang2024greenplm"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="greenplmbib" xml:space="preserve" style="display: none"></pre>
-              <span id="greenplmabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="greenplmabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="greenplmabs" class="blurb"></p>
+            </section>
+            <section id="greenplmbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="greenplmbib">Copy</button>
+              </div>
+              <pre id="greenplmbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- Mamba3D -->
-          <div id="han2024mamba3d" class="pub-card focus">
+          <article id="han2024mamba3d" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/Mamba3D.png" alt="Mamba3D teaser" />
+              <picture>
+                <source srcset="./about/Mamba3D.webp" type="image/webp" />
+                <img src="./about/Mamba3D.png" alt="Mamba3D teaser" width="450" height="321" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>Mamba3D: Enhancing Local Features for 3D Point Cloud Analysis via State Space Model&nbsp;</b>
-
-              <br /><br />
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>*,
+              <h3 class="pub-title">Mamba3D: Enhancing Local Features for 3D Point Cloud Analysis via State Space Model</h3>
+              <p class="pub-authors"><strong class="self-author">Xu Han</strong>*,
               Yuan Tang*,
               Zhaoxuan Wang,
-              <a href="https://nini-lxz.github.io/">Xianzhi Li<sup>&dagger;</sup></a>
-              <br /><br />
-              <i><strong style="color: brown">ACM MM 2024</strong></i><br /><br />
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li<sup>&dagger;</sup></a></p>
+              <div class="pub-footer">
+                <span class="venue">ACM MM 2024</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('han2024mamba3d')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://github.com/xhanxu/Mamba3D"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2404.14966"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('han2024mamba3d')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="han2024mamba3d"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://github.com/xhanxu/Mamba3D"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2404.14966"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="han2024mamba3d"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="mamba3dbib" xml:space="preserve" style="display: none"></pre>
-              <span id="mamba3dabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="mamba3dabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="mamba3dabs" class="blurb"></p>
+            </section>
+            <section id="mamba3dbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="mamba3dbib">Copy</button>
+              </div>
+              <pre id="mamba3dbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- MiniGPT-3D -->
-          <div id="tang2024minigpt3d" class="pub-card">
+          <article id="tang2024minigpt3d" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/MiniGPT-3D_teaser.png" alt="MiniGPT-3D teaser" />
+              <picture>
+                <source srcset="./about/MiniGPT-3D_teaser.webp" type="image/webp" />
+                <img src="./about/MiniGPT-3D_teaser.png" alt="MiniGPT-3D teaser" width="1228" height="957" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>MiniGPT-3D: Efficiently Aligning 3D Point Clouds with Large Language Models using 2D Priors&nbsp;</b>
-
-              <br /><br />
-              Yuan Tang,
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>,
-              <a href="https://nini-lxz.github.io/">Xianzhi Li<sup>&dagger;</sup></a>,
+              <h3 class="pub-title">MiniGPT-3D: Efficiently Aligning 3D Point Clouds with Large Language Models using 2D Priors</h3>
+              <p class="pub-authors">Yuan Tang,
+              <strong class="self-author">Xu Han</strong>,
+              <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li<sup>&dagger;</sup></a>,
               Qiao Yu,
               Yixue Hao,
               Long Hu,
-              Min Chen
-              <br /><br />
-              <i><strong style="color: brown">ACM MM 2024</strong></i><br /><br />
+              Min Chen</p>
+              <div class="pub-footer">
+                <span class="venue">ACM MM 2024</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('tang2024minigpt3d')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://github.com/tangyuan96/minigpt-3d"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://arxiv.org/abs/2405.01413"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('tang2024minigpt3d')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="tang2024minigpt3d"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://github.com/tangyuan96/minigpt-3d"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Project</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2405.01413"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="tang2024minigpt3d"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="minigpt3dbib" xml:space="preserve" style="display: none"></pre>
-              <span id="minigpt3dabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="minigpt3dabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="minigpt3dabs" class="blurb"></p>
+            </section>
+            <section id="minigpt3dbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="minigpt3dbib">Copy</button>
+              </div>
+              <pre id="minigpt3dbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
           <!-- patchDPCC -->
-          <div id="pan2024patchdpcc" class="pub-card">
+          <article id="pan2024patchdpcc" class="pub-card">
             <div class="pub-thumb">
-              <img src="./about/patchDPCC.png" alt="patchDPCC teaser" />
+              <picture>
+                <source srcset="./about/patchDPCC.webp" type="image/webp" />
+                <img src="./about/patchDPCC.png" alt="patchDPCC teaser" width="1008" height="601" loading="lazy" decoding="async" />
+              </picture>
             </div>
             <div class="pub-info">
-              <b>patchDPCC: A Patchwise Deep Compression Framework for Dynamic Point Clouds&nbsp;</b>
-
-              <br /><br />
-              Zirui Pan,
-              <a href="https://xiaomengbai.github.io/">Mengbai Xiao<sup>&dagger;</sup></a>,
-              <u><strong style="color: rgb(0, 47, 167)">Xu Han</strong></u>,
+              <h3 class="pub-title">patchDPCC: A Patchwise Deep Compression Framework for Dynamic Point Clouds</h3>
+              <p class="pub-authors">Zirui Pan,
+              <a href="https://xiaomengbai.github.io/" target="_blank" rel="noopener noreferrer">Mengbai Xiao<sup>&dagger;</sup></a>,
+              <strong class="self-author">Xu Han</strong>,
               Dongxiao Yu,
-              <a href="https://zhang-guanghui-nick.github.io/index_english.html">Guanghui Zhang</a>,
-              <a href="https://yaoliu-yl.github.io/">Yao Liu</a>
-              <br /><br />
-              <i><strong style="color: brown">AAAI 2024</strong></i><br /><br />
+              Guanghui Zhang,
+              Yao Liu</p>
+              <div class="pub-footer">
+                <span class="venue">AAAI 2024</span>
+                <nav class="pub-actions" aria-label="Publication resources">
 
-              <a shape="rect" href="javascript:toggleabs('pan2024patchdpcc')" class="toggleabs box"
-                ><i class="fas fa-angle-double-down" aria-hidden="true">&nbsp;</i>Intro&nbsp;</a
-              ><a class="box" href="https://ojs.aaai.org/index.php/AAAI/article/view/28238"
-                ><i class="fas fa-home" aria-hidden="true">&nbsp;</i>Home&nbsp;</a
-              ><a class="box" href="https://ojs.aaai.org/index.php/AAAI/article/view/28238"
-                ><i class="fa fa-file-lines" aria-hidden="true">&nbsp;</i>Paper</a
-              ><a shape="rect" href="javascript:togglebib('pan2024patchdpcc')" class="togglebib box"
-                ><i class="fas fa-quote-left" aria-hidden="true">&nbsp;</i>Bibtex&nbsp;</a
+              <button type="button" class="toggleabs box" data-paper="pan2024patchdpcc"
+                ><span class="action-icon icon-chevron" aria-hidden="true"></span>Abstract</button
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://ojs.aaai.org/index.php/AAAI/article/view/28238"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Publisher</a
+              ><a class="box" target="_blank" rel="noopener noreferrer" href="https://ojs.aaai.org/index.php/AAAI/article/view/28238"
+                ><span class="action-icon icon-external" aria-hidden="true"></span>Paper</a
+              ><button type="button" class="togglebib box" data-paper="pan2024patchdpcc"
+                ><span class="action-icon icon-cite" aria-hidden="true"></span>Cite</button
               >
-              <pre id="patchdpccbib" xml:space="preserve" style="display: none"></pre>
-              <span id="patchdpccabs" class="blurb" style="display: none"></span>
+                            </nav>
+              </div>
             </div>
-          </div>
+            <section id="patchdpccabs-panel" class="pub-details abstract-details" aria-label="Abstract" hidden>
+              <div class="pub-details-head"><span>Abstract</span></div>
+              <p id="patchdpccabs" class="blurb"></p>
+            </section>
+            <section id="patchdpccbib-panel" class="pub-details citation-details" aria-label="BibTeX citation" hidden>
+              <div class="pub-details-head">
+                <span>BibTeX</span>
+                <button type="button" class="copy-citation" data-copy-target="patchdpccbib">Copy</button>
+              </div>
+              <pre id="patchdpccbib" xml:space="preserve"></pre>
+            </section>
+          </article>
 
         </div><!-- /.pub-list -->
 
         <!-- ── Academic Service ── -->
         <hr class="section-divider" />
 
-        <h1 id="service">Academic Service</h1>
+        <div class="section-heading compact" id="service">
+          <div>
+            <span class="section-kicker">Community</span>
+            <h2 class="section-title">Academic Service</h2>
+          </div>
+        </div>
         <ul class="service-list">
           <li>
             <strong>Computer Vision (CV)</strong>: MM, CVPR<br />
@@ -494,13 +587,14 @@
           </li>
         </ul>
 
-        <div align="center">
-          <br />
-          <strong>Last updated: <span style="color: rgb(0, 47, 167)" id="demo"></span></strong>
-        </div>
+        <footer class="site-footer">
+          <span class="footer-mark" aria-hidden="true">XH</span>
+          <span>Last updated <time datetime="2026-07">July 2026</time></span>
+          <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </footer>
 
       </div><!-- /#container -->
-    </div><!-- /.content -->
+    </main><!-- /.content -->
 
     <!-- Scroll-spy for nav -->
     <script>
@@ -519,7 +613,13 @@
             }
           });
           navLinks.forEach(function (link) {
-            link.classList.toggle('active', link.dataset.section === current);
+            var isCurrent = link.dataset.section === current;
+            link.classList.toggle('active', isCurrent);
+            if (isCurrent) {
+              link.setAttribute('aria-current', 'location');
+            } else {
+              link.removeAttribute('aria-current');
+            }
           });
           nav.classList.toggle('visible', window.scrollY > 80);
         }

@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Xu Han</title>
+    <title>Xu Han — Generative AI &amp; 3D Vision Researcher</title>
 
     <meta name="author" content="Xu Han" />
     <meta
@@ -15,6 +15,24 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://xhanxu.github.io/" />
     <meta property="og:image" content="https://xhanxu.github.io/about/MyPic.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Xu Han — Generative AI &amp; 3D Vision Researcher" />
+    <meta name="twitter:description" content="Research across generative models, 3D vision, and multimodal learning." />
+    <meta name="twitter:image" content="https://xhanxu.github.io/about/MyPic.jpg" />
+    <link rel="canonical" href="https://xhanxu.github.io/" />
+
+    <script>
+      (function () {
+        var backgrounds = [
+          "./about/26-Tahoe-Light-bg.webp",
+          "./about/pexels-steve-29097440.webp",
+          "./about/pexels-thales13-38484552.webp"
+        ];
+        var selected = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+        var selectedUrl = new URL(selected, document.baseURI).href;
+        document.documentElement.style.setProperty("--page-bg-image", 'url("' + selectedUrl + '")');
+      })();
+    </script>
 
     <link rel="icon" href="./about/bitbug_favicon.ico" type="image/x-icon" />
 
@@ -154,8 +172,8 @@
             <span class="section-kicker">Research output</span>
             <h2 class="section-title">Publications</h2>
           </div>
-          <p>
-            My work spans generative modeling, 3D vision, and multimodal learning.<br />
+          <p class="publication-legend">
+            <span>Generative Models · 3D Vision · Multimodal Learning</span>
             <small>* equal contribution · <sup>&dagger;</sup> corresponding author</small>
           </p>
         </div>
@@ -220,8 +238,8 @@
               <a href="https://nini-lxz.github.io/" target="_blank" rel="noopener noreferrer">Xianzhi Li<sup>&dagger;</sup></a>,
               Yuan Tang,
               <strong class="self-author">Xu Han</strong>,
+              Jinfeng Xu,
               Long Hu,
-              Yixue Hao,
               Min Chen</p>
               <div class="pub-footer">
                 <span class="venue">TVCG 2025</span>
@@ -582,8 +600,7 @@
         </div>
         <ul class="service-list">
           <li>
-            <strong>Computer Vision (CV)</strong>: MM, CVPR<br />
-            <strong>Machine Learning (ML)</strong>: AAAI
+            <strong>Reviewer</strong>: CVPR, ACM MM, AAAI
           </li>
         </ul>
 
